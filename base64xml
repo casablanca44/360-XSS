@@ -1,0 +1,4 @@
+const queryParams = new URLSearchParams(window.location.search);
+const xmlParam = queryParams.get('xml');
+const decodedURL = atob(xmlParam); // Base64 디코딩
+window.location.href = decodedURL; // 디코딩된 URL로 리디렉션
