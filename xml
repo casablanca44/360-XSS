@@ -1,0 +1,8 @@
+const queryParams = new URLSearchParams(window.location.search);
+const xml = queryParams.get('xml');
+
+if (xml) {
+    window.location.href = "https://www.naver.com";
+} else {
+    console.error('No XML parameter found.');
+}
